@@ -1,0 +1,142 @@
+.workingTogether {
+  width: 100%;
+  color: rgb(23, 23, 99);
+  padding: var(--size-6) var(--size-1) 4rem var(--size-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.workingTogether h1 {
+  width: 60%;
+  font-size: var(--size-3);
+  margin-bottom: var(--size-4);
+}
+
+.partnerCards {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.partnerCard {
+  background-color: var(--colors-1);
+  width: 32rem;
+  padding: 10rem var(--size-3) var(--size-5) var(--size-3);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--size-4);
+  position: relative;
+}
+
+.partnerCard h2 {
+  background-color: var(--colors-5);
+  width: 15rem;
+  text-align: center;
+  font-size: var(--size-3);
+  padding: 0.5rem;
+  border-top-right-radius: 50px;
+  position: absolute;
+  top: 3rem;
+  left: -1rem;
+}
+
+.cardContent {
+  height: 20rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-1);
+}
+
+.cardContent p {
+  color: white;
+  font-size: var(--size-1_5);
+}
+
+.cardContent a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.8rem;
+  align-items: flex-end;
+}
+
+.cardContent a:hover {
+  background-color: rgb(145, 145, 145);
+  border: 1px solid rgb(145, 145, 145);
+}
+
+.assistContainer {
+  width: 100%;
+  margin-top: -5rem;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  border-top-right-radius: 100px;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.assistContainer .assist {
+  text-decoration: none;
+  width: 35rem;
+  height: 18rem;
+  background-color: white;
+  padding: 3rem 1.2rem 1rem 1.2rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+  transition: all 0.3s;
+}
+
+.assistContainer .assist:hover {
+  transform: translateY(-10px);
+}
+
+.contentContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.assistContainer .assist h3 {
+  font-size: var(--size-2);
+}
+
+.assistContainer .assist p {
+  width: 100%;
+  font-size: var(--favorite-size-0);
+}
+
+.assistContainer .assist a {
+  color: rgb(23, 23, 99);
+  font-size: var(--favorite-size-0);
+  display: flex;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+
+.assistContainer .assist a:hover {
+  text-decoration: none;
+  gap: 0.1rem;
+}

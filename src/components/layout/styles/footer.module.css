@@ -1,0 +1,182 @@
+footer {
+  background-color: var(--colors-1);
+  color: var(--white_special);
+  width: 100%;
+  padding: var(--size-2) var(--size-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-5);
+}
+
+.newsletter {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 var(--size-4);
+}
+
+.newsletter h1 {
+  width: 60%;
+  font-size: var(--size-2_5);
+}
+
+.newsletter .inputContainer {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--size-0);
+}
+
+.newsletter .inputContainer input {
+  color: rgb(245, 242, 242);
+  width: 100%;
+  height: 4rem;
+  padding: 0 1rem;
+  font: inherit;
+  font-size: var(--favorite-size-1);
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px solid rgb(241, 241, 241);
+  border-radius: 6px;
+}
+
+.newsletter .inputContainer input::placeholder {
+  color: rgb(199, 197, 197);
+}
+
+.newsletter .inputContainer input:focus {
+  outline: none;
+}
+
+.newsletter .inputContainer button {
+  color: var(--white_special);
+  background-color: transparent;
+  width: 7rem;
+  height: 4.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: inherit;
+  font-size: var(--size-1_5);
+  border: none;
+  border-bottom: 4px solid white;
+  cursor: pointer;
+}
+
+.newsletter .inputContainer button:hover {
+  border-bottom: 4px solid darkorange;
+}
+
+footer .customer_info {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 6rem;
+}
+
+footer .customer_info h1 {
+  text-align: center;
+}
+
+.footerLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: white;
+  font-size: var(--favorite-size-1);
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+  text-underline-offset: 8px;
+}
+
+footer .customer_info .social_media {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+footer .customer_info .social_media h1 {
+  font-size: var(--size-1_5);
+}
+
+footer .customer_info .social_media .social_media_logos {
+  display: flex;
+  gap: var(--size-0);
+}
+
+footer .customer_info .social_media a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: var(--size-3);
+  height: 2rem;
+}
+
+footer .customer_info .social_media img {
+  width: var(--size-2);
+  height: 100%;
+}
+footer .customer_info .social_media a:nth-child(2) img {
+  width: var(--size-4);
+}
+
+footer .company_policy {
+  width: 90%;
+  margin: 0 auto;
+  padding: var(--size-1);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--size-2);
+  margin-top: var(--size-1);
+  background-color: #053044;
+}
+
+footer .company_policy .policies {
+  display: flex;
+  gap: var(--size-1);
+}
+
+footer .company_policy a {
+  color: white;
+  text-decoration: none;
+}
+
+footer .company_policy .policies a:hover {
+  color: var(--colors-8);
+}
+@media screen and (max-width: 48rem) {
+  footer .customer_info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--size-1);
+  }
+
+  footer .customer_info h1 {
+    text-align: left;
+  }
+
+  footer .company_policy {
+    width: 100%;
+    gap: var(--size-0);
+  }
+  footer .company_policy .policies {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 25rem) {
+  footer .customer_info {
+    display: flex;
+    flex-direction: column;
+  }
+}

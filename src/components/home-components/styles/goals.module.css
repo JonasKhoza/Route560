@@ -1,0 +1,104 @@
+.goalsContainer {
+  color: rgb(23, 23, 99);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.goalsContainer .header {
+  width: 100%;
+  padding: var(--size-6) var(--size-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.goalsContainer h1 {
+  font-family: "Poppins", sans-serif;
+  width: 80%;
+  font-size: var(--size-2);
+}
+
+.contentContainer {
+  background-color: rgb(233, 233, 233);
+  width: 100%;
+  padding: var(--size-4) var(--size-1) var(--size-5) var(--size-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-4);
+}
+
+.goalContainer {
+  width: 56%;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-0);
+  white-space: pre-wrap;
+}
+
+.goalContainer h2 {
+  color: var(--colors-15);
+  font-size: var(--size-6);
+}
+
+.goalContainer p {
+  font-weight: 600;
+  font-size: var(--favorite-size-1);
+}
+
+.goalContainer p .companyName {
+  color: var(--colors-4);
+  font-size: 1.5rem;
+  padding: 0 0.2rem;
+}
+
+.goalContainer p .companyName:hover {
+  text-decoration: none;
+  color: var(--colors-16);
+}
+
+.achievements {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.communityWorkImageContainer {
+  border-radius: 10px;
+  width: 40rem;
+  height: 20rem;
+}
+
+.ourStrategy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievements h3 {
+  color: var(--colors-15);
+  font-size: var(--size-4);
+}
+
+.achievements ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-0);
+  padding-left: var(--size-6);
+}
+
+.achievements ul li {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.achievements ul li .icon {
+  color: inherit;
+  font-size: var(--size-2);
+}

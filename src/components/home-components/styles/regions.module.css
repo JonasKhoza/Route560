@@ -1,0 +1,97 @@
+.regionsContainer {
+  width: 100%;
+  color: var(--colors-5);
+  background-color: #f3f3f3;
+  padding: var(--size-2) 0 8rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.regionsContainer h1 {
+  width: 100%;
+  font-size: var(--size-3_5);
+  text-align: center;
+  margin: var(--size-2_5) 0 var(--size-1_5) 0;
+}
+
+.regionsMapContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.regions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.region {
+  width: 40rem;
+  height: 18rem;
+  padding: 0.5rem;
+  display: flex;
+  gap: 0;
+  position: relative;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 2px rgb(235, 234, 234);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.region:hover {
+  transform: rotateY(5deg);
+}
+
+.regionContentContainer {
+  padding: var(--size-0);
+  padding-top: var(--size-1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.regionContentContainer p {
+  font-size: var(--favorite-size-1);
+  color: var(--colors-14);
+}
+
+.regionImageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100rem;
+}
+
+.regionImageContainer img {
+  width: 100%;
+  height: 12rem;
+}
+
+.regionImageContainer a {
+  text-decoration: none;
+  color: var(--colors-5);
+  width: fit-content;
+  height: fit-content;
+  font-weight: 600;
+  font-size: var(--favorite-size-1);
+  padding: 0.8rem 0.5rem;
+  border: 1px solid var(--colors-5);
+  border-radius: 4px;
+  transition: all o.3s;
+}
+
+.regionImageContainer a:hover {
+  color: var(--colors-4);
+  border: 1px solid var(--colors-4);
+}
+
+.mapContainer {
+  text-align: center;
+  font-size: 4rem;
+}

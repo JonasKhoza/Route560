@@ -1,0 +1,83 @@
+.ourBlog {
+  padding: var(--size-2);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+.ourBlog h1 {
+  width: 100%;
+  text-align: center;
+  font-size: var(--size-3);
+}
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.blog {
+  display: inline-block;
+  width: 21rem;
+  height: 35rem;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px 2px rgb(235, 234, 234);
+}
+
+.blog img {
+  height: 18rem;
+}
+
+.contentContainer {
+  color: rgb(23, 23, 99);
+  background-color: white;
+  height: calc(35rem - 18rem);
+  padding: 0.2rem 0.5rem;
+  padding-bottom: 0.5rem;
+  white-space: pre-wrap;
+  display: flex;
+  flex-direction: column;
+
+  transition: all 0.3s;
+  background-color: red;
+}
+
+.content {
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
+  background-color: yellow;
+}
+
+.content .readMoreBtn {
+  align-self: flex-end;
+  background-color: red;
+}
+
+.contentContainer h2 {
+  text-align: center;
+  font-size: var(--size-1_5);
+}
+
+.contentContainer h3 {
+  text-align: center;
+  font-size: var(--favorite-size-1);
+}
+
+.contentContainer p {
+  text-align: center;
+}
+
+.authorContainer {
+  height: calc(19rem - 16rem);
+  background-color: blue;
+}
